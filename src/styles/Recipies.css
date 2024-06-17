@@ -1,0 +1,202 @@
+.Recipies {
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("../images/orange.svg"); */
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.Recipies .searchInp {
+    width: 450px;
+    padding: 7px;
+    border: 0.5px solid orange;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.Recipies button {
+    width: 100px;
+    margin-left: 5px;
+    padding: 8px;
+    border: none;
+    background-color: orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Recipies .search {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.Recipies .commonContainer {
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px -3px rgba(0, 0, 0, 0.63);
+}
+
+.Recipies .checkboxContainer {
+    width: 80%;
+    min-height: 40vh;
+    margin: 20px auto;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px -3px rgba(0, 0, 0, 0.63);
+}
+
+.Recipies .categoriesCheckbox {
+    padding-right: 20px;
+}
+
+.Recipies .categoriesCheckbox label {
+    display: inline-block;
+    padding: 5px;
+}
+
+.Recipies .cuisineCheckbox label {
+    display: inline-block;
+    padding: 5px;
+}
+
+.Recipies .categoriesCheckbox p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.Recipies .containerHealthAndDishType {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerHealthAndDishType select {
+    width: 170px;
+    padding: 2px;
+}
+
+.containerHealthAndDishType label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.Recipies .healthCheckbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Recipies .dietandCuisine {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Recipies .healthCheckbox p {
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.Recipies .cuisineCheckbox {
+    min-height: 250px;
+    max-width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Recipies .cuisineCheckbox .commonCuisine {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Recipies .cuisineCheckbox p {
+    width: 100%;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+.Recipies .dishTypeCheckbox {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Recipies .dishTypeCheckbox p {
+    font-weight: bold;
+    width: 100%;
+    height: 18px;
+}
+
+.Recipies .recipiesContainer {
+    width: 80%;
+    padding: 30px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 14px -3px rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .Recipies {
+        padding: 15px;
+        background-image: none;
+    }
+    .Recipies .searchInp {
+        width: 70%;
+        padding: 7px;
+    }
+    .Recipies .search {
+        width: 95%;
+    }
+    .Recipies .search button {
+        width: 80px
+    }
+    .Recipies .commonContainer {
+        width: 90%;
+        padding: 15px;
+    }
+    .Recipies .recipiesContainer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0px 0px;
+        justify-content: space-evenly
+    }
+    .Recipies .checkboxContainer {
+        padding: 20px;
+        width: 90%;
+
+    }
+    .Recipies .cuisineCheckbox p {
+        padding: 10px 0 10px 0;
+    }
+    .Recipies .cuisineCheckbox .commonCuisine {
+        padding-bottom: 10px;
+    }
+}

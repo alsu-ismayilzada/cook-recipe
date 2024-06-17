@@ -1,0 +1,21 @@
+.Favorites{
+    padding: 10px;
+}
+.Favorites .favoriteRecipies{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px -3px rgba(0, 0, 0, 0.63);
+}
+
+.Favorites h1{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Favorites h3{
+    width: 100%;
+    text-align: left;
+}

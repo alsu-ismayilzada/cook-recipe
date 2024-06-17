@@ -1,0 +1,101 @@
+.Footer{
+    width: 100%;
+    height: 40vh;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/footer.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.Footer .left{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-around;
+}
+.Footer .left p{
+    width: 40vw;
+}
+.Footer .left h2 span{
+    color: orange;
+}
+.Footer .right{
+    width: 20vw;
+    /* text-align: center; */
+}
+.Footer .right ul{
+    list-style-type: none;
+}
+.Footer .right li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: white;
+}
+.Footer .right .register button{
+    width: 80px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: orange;
+    /* color: white; */
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    .Footer{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .Footer .left h2{
+        margin-bottom: 15px;
+    }
+    .Footer .right{
+        width: 90%;
+    }
+    .Footer .left{
+        height: auto;
+        width: 100%;
+    }
+    .Footer .left p{
+        /* display: none; */
+        margin-bottom: 3px;
+        width: 100%;
+    }
+    .Footer .left p .ektratext{
+        display: none;
+    }
+    .Footer ul{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .Footer{
+        height: auto;
+        padding: 20px;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    .Footer .left{
+        height: auto;
+    }
+    .Footer .left h2, .left p{
+        margin-bottom: 10px;
+        width: 80% !important;
+    }
+}

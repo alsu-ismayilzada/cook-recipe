@@ -1,0 +1,102 @@
+.CreateRecipe{
+    width: 100vw;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/footer.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.CreateRecipe h3{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-weight: 300;
+}
+.CreateRecipe .cooseFile::file-selector-button{
+    background-color: orange;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+}
+.CreateRecipe .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
+}
+.CreateRecipe .buttons button{
+    width: 120px;
+    padding: 8px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+.CreateRecipe .common{
+    width: 50vw;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.CreateRecipe .common .photo{
+    border: 0.5px solid gray;
+    width: 98%;
+    min-height: 150px;
+    /* width: 90%; */
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+.CreateRecipe .common .photo img{
+    width: 100%;
+}
+.CreateRecipe .common input,.common textarea,.common select,.common div{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+.CreateRecipe .common button{
+    padding: 8px;
+    width: 120px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+.CreateRecipe .common div{
+    border: none;
+    text-align: center;
+}
+.CreateRecipe .common ol, .common ul{
+    width: 90%;
+    text-align: left;
+}
+.CreateRecipe .common ol{
+    padding-left: 15px;
+}
+.CreateRecipe .ingredients li{
+    list-style: inside;
+}
+.CreateRecipe .buttons{
+    width: 20%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+.CreateRecipe{
+    flex-direction: column;
+    height: auto;
+}
+.CreateRecipe .common{
+    min-width: 290px;
+}
+}

@@ -1,0 +1,78 @@
+.Recipe{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 550px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Recipe h1{    
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.Recipe .foodImage{
+    box-shadow: 1px 1px 14px -3px rgba(0,0,0,0.63);
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5px;
+}
+.Recipe .features{
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.Recipe .ingredients{
+    padding: 5px 10px 5px;
+    box-sizing: border-box;
+    border: 0.3px solid gray;
+    box-shadow: 1px 1px 14px -3px rgba(0,0,0,0.63);
+    border-radius: 5px;
+    width: 60%;
+}
+.Recipe .ingredients ul{    
+   width: 95%;
+   list-style-position: inside; 
+}
+.Recipe .otherFeatures{border: 0.3px solid gray;
+    box-shadow: 1px 1px 14px -3px rgba(0,0,0,0.63);
+    border-radius: 5px;
+    padding: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Recipe .bottom{
+    border: 0.3px solid gray;
+    box-shadow: 1px 1px 14px -3px rgba(0,0,0,0.63);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.Recipe button ,.visitBtn{
+    background-color: orange;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.Recipe .likeImg{
+    height: 35px;
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .Recipe .features{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Recipe .features .ingredients, .features .otherFeatures{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .Recipe .foodImage{
+        width: 100%;
+        height: 250px;
+    }
+}
